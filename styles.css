@@ -1,0 +1,151 @@
+:root {
+  color-scheme: light;
+  --bg: #f8f3fb;
+  --surface: #ffffff;
+  --text: #211827;
+  --muted: #63586c;
+  --line: #ded2e8;
+  --primary: #9b5cf6;
+  --primary-dark: #6f2dbd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, #fff0f7, transparent 28rem),
+    linear-gradient(135deg, #f8f3fb, #f4fbff);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+}
+
+.shell {
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 56px;
+}
+
+.hero {
+  padding: 42px 0 28px;
+}
+
+.eyebrow {
+  color: var(--primary-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.08;
+  margin: 0 0 14px;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin: 34px 0 12px;
+}
+
+h3 {
+  font-size: 1.08rem;
+  margin: 24px 0 8px;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+a {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 720px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 18px 55px rgba(65, 35, 92, 0.12);
+  margin: 18px 0;
+  padding: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.button {
+  align-items: center;
+  background: var(--primary);
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  min-height: 44px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.button.secondary {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary-dark);
+}
+
+.language-block {
+  border-top: 1px solid var(--line);
+  margin-top: 28px;
+  padding-top: 22px;
+}
+
+ul,
+ol {
+  margin: 8px 0 18px 22px;
+  padding: 0;
+}
+
+li {
+  margin: 6px 0;
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 36px;
+  padding-top: 20px;
+}
+
+@media (max-width: 560px) {
+  .shell {
+    width: min(100% - 24px, 980px);
+    padding-top: 18px;
+  }
+
+  .hero {
+    padding-top: 26px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
