@@ -6,56 +6,327 @@
     <title>MEL - My Eclectic Library</title>
     <meta
       name="description"
-      content="MEL: sua biblioteca pessoal para livros, HQs e muito mais."
+      content="Organize livros, HQs, mangás, revistas e arquivos de leitura em uma biblioteca pessoal para Android."
     />
+    <meta name="theme-color" content="#160b24" />
+    <meta property="og:title" content="MEL - My Eclectic Library" />
+    <meta
+      property="og:description"
+      content="Sua biblioteca pessoal para livros, HQs e muito mais."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://gerson2099.github.io/mel-library-pages/"
+    />
+    <meta
+      property="og:image"
+      content="https://gerson2099.github.io/mel-library-pages/assets/mel-feature-graphic-1024x500-wide.png"
+    />
+    <link rel="icon" href="assets/mel-play-icon-128.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="shell">
-      <section class="hero">
-        <p class="eyebrow">MEL - My Eclectic Library</p>
-        <h1>Sua biblioteca pessoal para livros, HQs e muito mais.</h1>
-        <p class="lead">
-          O MEL ajuda você a organizar livros, HQs, mangás, revistas, light
-          novels e arquivos de leitura em uma biblioteca local, com recursos
-          opcionais da MEL Cloud.
-        </p>
-        <div class="button-row">
-          <a class="button" href="privacy.html">Política de Privacidade</a>
-          <a class="button secondary" href="account-deletion.html">
-            Exclusão de Conta e Suporte
-          </a>
+    <!--
+      THESIS: uma coleção diversa encontra ordem sem deixar de pertencer ao leitor; recusamos a vitrine genérica de aplicativo.
+      OWN-WORLD: noite de biblioteca, tecido escuro, roxo MEL e lampejos de temas especiais; controles firmes e superfícies editoriais.
+      STORY: o visitante reconhece o problema, acompanha um item do cadastro à leitura e entende privacidade, estágio e modelo comercial.
+      FIRST VIEWPORT: promessa e ações à esquerda; o MEL funcionando em um aparelho à direita; estado de lançamento visível no topo.
+      FORM: jornada contínua de um item pela biblioteca, terceira estrutura da exploração, com um fio que conecta os principais momentos.
+    -->
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="Página inicial do MEL">
+          <img src="assets/mel-play-icon-128.png" width="40" height="40" alt="" />
+          <span>
+            <strong>MEL</strong>
+            <small>My Eclectic Library</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#recursos">Recursos</a>
+          <a href="#privacidade">Privacidade</a>
+          <a href="partners.html">Lojas parceiras</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero home-hero">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="status"><span aria-hidden="true"></span> Em preparação para lançamento</p>
+          <h1>Toda a sua biblioteca.<em>Organizada do seu jeito.</em></h1>
+          <p class="lead">
+            Organize livros, HQs, mangás, revistas, light novels, artbooks e
+            arquivos de leitura em um só lugar. O MEL funciona localmente no
+            Android e não exige conta para começar.
+          </p>
+          <div class="button-row">
+            <a class="button" href="#recursos">Conheça os recursos</a>
+            <a class="button button--quiet" href="privacy.html">Como tratamos seus dados</a>
+          </div>
+          <ul class="hero-facts" aria-label="Informações principais">
+            <li>Android</li>
+            <li>Português, inglês e espanhol</li>
+            <li>Biblioteca local primeiro</li>
+          </ul>
+        </div>
+
+        <figure class="phone-stage">
+          <div class="theme-ribbon" aria-hidden="true"></div>
+          <div class="phone-frame">
+            <img
+              src="assets/mel-home-pt-br.png"
+              width="720"
+              height="1600"
+              alt="Tela inicial do MEL com progresso de leitura e livros organizados por categoria"
+            />
+          </div>
+          <figcaption>Biblioteca de demonstração com obras em domínio público.</figcaption>
+        </figure>
+      </section>
+
+      <section class="format-strip" aria-labelledby="formatos-titulo">
+        <div>
+          <p class="section-kicker">Uma biblioteca realmente eclética</p>
+          <h2 id="formatos-titulo">Livros não vivem todos na mesma prateleira.</h2>
+        </div>
+        <ul>
+          <li>Livros</li>
+          <li>HQs</li>
+          <li>Mangás</li>
+          <li>Revistas</li>
+          <li>Light novels</li>
+          <li>Artbooks</li>
+          <li>PDF</li>
+          <li>CBR</li>
+          <li>CBZ</li>
+        </ul>
+      </section>
+
+      <section class="journey" id="recursos" aria-labelledby="jornada-titulo">
+        <div class="section-heading">
+          <p class="section-kicker">Do primeiro cadastro à próxima leitura</p>
+          <h2 id="jornada-titulo">Um item entra. Sua coleção ganha contexto.</h2>
+          <p>
+            O MEL reúne tarefas que normalmente ficam espalhadas em vários
+            aplicativos. Cada etapa continua sob seu controle.
+          </p>
+        </div>
+
+        <div class="journey-track">
+          <article class="journey-step journey-step--wide">
+            <div class="journey-step__number" aria-hidden="true">1</div>
+            <div class="journey-step__copy">
+              <h3>Adicione com menos digitação</h3>
+              <p>
+                Escaneie um ISBN, pesquise por título ou cadastre manualmente.
+                Antes de salvar, você pode revisar capa, autores, editora,
+                edição, descrição e outros dados.
+              </p>
+              <ul class="check-list">
+                <li>Leitura de código de barras</li>
+                <li>Pesquisa local e na web</li>
+                <li>Edição completa dos metadados</li>
+              </ul>
+            </div>
+            <div class="journey-step__visual compact-shot">
+              <img
+                src="assets/mel-edit-pt-br.png"
+                width="720"
+                height="1600"
+                loading="lazy"
+                alt="Tela do MEL para revisar e editar os dados de uma obra"
+              />
+            </div>
+          </article>
+
+          <article class="journey-step journey-step--reverse">
+            <div class="journey-step__number" aria-hidden="true">2</div>
+            <div class="journey-step__copy">
+              <h3>Organize como você pensa</h3>
+              <p>
+                Use estantes, coleções, subcoleções e favoritos. Marque o que
+                você tem, quer ter, está lendo, já leu ou quer ler — sem reduzir
+                sua coleção a um único tipo de mídia.
+              </p>
+              <p class="plain-proof">
+                Progresso de leitura, volume, número da edição e categorias
+                convivem na mesma biblioteca.
+              </p>
+            </div>
+            <div class="shelf-demo" aria-label="Exemplo de organização em estantes">
+              <span>Tenho</span>
+              <span>Quero ler</span>
+              <span>Lendo</span>
+              <span>Lido</span>
+              <span>Favoritos</span>
+            </div>
+          </article>
+
+          <article class="journey-step journey-step--reader">
+            <div class="journey-step__number" aria-hidden="true">3</div>
+            <div class="journey-step__copy">
+              <h3>Leia e acompanhe no mesmo lugar</h3>
+              <p>
+                Importe PDF, CBR e CBZ, continue de onde parou e registre o
+                progresso de obras físicas. Os arquivos de leitura permanecem
+                no aparelho e não são enviados à MEL Cloud.
+              </p>
+            </div>
+            <div class="reader-proof">
+              <strong>Seu arquivo continua seu.</strong>
+              <span>Leitura local</span>
+              <span>Backup manual opcional</span>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="grid">
-        <article class="card">
-          <h2>Privacidade</h2>
+      <section class="themes" aria-labelledby="temas-titulo">
+        <div class="themes__visual">
+          <img
+            src="assets/mel-themes-pt-br.png"
+            width="720"
+            height="1600"
+            loading="lazy"
+            alt="Tela do MEL com opções de cores sólidas e temas em degradê"
+          />
+        </div>
+        <div class="themes__copy">
+          <p class="section-kicker">Identidade visual que acompanha a coleção</p>
+          <h2 id="temas-titulo">Não existe uma única cor para todo leitor.</h2>
           <p>
-            A biblioteca local fica no aparelho. A MEL Cloud é opcional e serve
-            para conta, contribuições revisadas e créditos públicos quando o
-            usuário escolhe colaborar.
+            O MEL inclui personalização de cor e modos claro e escuro. Temas
+            especiais, degradês e a opção de fazer os botões seguirem o tema
+            fazem parte do planejamento do MEL Premium Visual.
           </p>
-        </article>
-        <article class="card">
-          <h2>Conta MEL Cloud</h2>
-          <p>
-            O app funciona com ou sem conta. A conta MEL Cloud permite login,
-            recuperação de acesso, contribuições e exclusão de conta pelo app.
-          </p>
-        </article>
-        <article class="card">
-          <h2>Suporte</h2>
-          <p>
-            Para suporte, sugestões, erros ou solicitações sobre dados e conta:
-            <a href="mailto:mel.app.contact@gmail.com">mel.app.contact@gmail.com</a>.
-          </p>
-        </article>
+          <div class="notice notice--planned">
+            <strong>Recurso em preparação</strong>
+            <p>
+              A compra do Premium ainda não está disponível. A página será
+              atualizada antes da liberação comercial.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <footer class="footer">
-        <p>Última atualização: 27 de julho de 2026.</p>
-      </footer>
+      <section class="privacy-split" id="privacidade" aria-labelledby="privacidade-titulo">
+        <div class="privacy-split__intro">
+          <p class="section-kicker">Local primeiro. Nuvem opcional.</p>
+          <h2 id="privacidade-titulo">Sua biblioteca não depende de uma conta.</h2>
+          <p>
+            Você pode usar os recursos principais localmente. A Conta MEL
+            Cloud é opcional e separada dos arquivos PDF, CBR e CBZ guardados no
+            aparelho.
+          </p>
+          <a class="text-link" href="privacy.html">Leia a Política de Privacidade <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="data-map" aria-label="Resumo de onde os dados ficam">
+          <div class="data-map__lane">
+            <strong>No aparelho</strong>
+            <span>Biblioteca e preferências</span>
+            <span>Progresso de leitura</span>
+            <span>Arquivos PDF, CBR e CBZ</span>
+          </div>
+          <div class="data-map__lane data-map__lane--cloud">
+            <strong>Na MEL Cloud, se você escolher</strong>
+            <span>Conta e nome público</span>
+            <span>Contribuições de metadados</span>
+            <span>Créditos da comunidade</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-preview" aria-labelledby="parceiros-titulo">
+        <div>
+          <p class="section-kicker">Transparência comercial desde o início</p>
+          <h2 id="parceiros-titulo">Encontrar uma edição física sem esconder como o link funciona.</h2>
+        </div>
+        <div class="partners-preview__copy">
+          <p>
+            O MEL está preparando links identificados para lojas parceiras. Se
+            uma compra qualificada gerar comissão, isso não aumenta o preço
+            pago pelo usuário. A loja continua responsável por preço,
+            pagamento, entrega, troca e suporte.
+          </p>
+          <p class="partner-status"><strong>Status atual:</strong> links de parceiros ainda não estão ativos nesta página.</p>
+          <a class="button button--light" href="partners.html">Entenda os links de parceiros</a>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="faq-titulo">
+        <div class="section-heading section-heading--compact">
+          <p class="section-kicker">Antes de instalar</p>
+          <h2 id="faq-titulo">Perguntas frequentes</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>O MEL já está disponível no Google Play?</summary>
+            <p>
+              Ainda não. O aplicativo está em preparação para testes e
+              lançamento. Esta página será atualizada quando houver uma versão
+              pública disponível.
+            </p>
+          </details>
+          <details>
+            <summary>Preciso criar uma conta?</summary>
+            <p>
+              Não. A biblioteca local funciona sem login. A Conta MEL Cloud é
+              opcional para recursos de comunidade e conta.
+            </p>
+          </details>
+          <details>
+            <summary>O MEL vende livros?</summary>
+            <p>
+              Não. O MEL organiza a biblioteca e poderá encaminhar o usuário
+              para lojas externas. Compra, cobrança, entrega e atendimento são
+              feitos pela loja escolhida.
+            </p>
+          </details>
+          <details>
+            <summary>Meus arquivos de leitura vão para a nuvem?</summary>
+            <p>
+              Não. Arquivos PDF, CBR e CBZ da biblioteca permanecem no aparelho
+              e não são enviados à MEL Cloud.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact" id="contato" aria-labelledby="contato-titulo">
+        <div>
+          <p class="section-kicker">Fale com o MEL</p>
+          <h2 id="contato-titulo">Dúvidas, sugestões ou parcerias?</h2>
+        </div>
+        <div>
+          <p>
+            Use o mesmo canal para suporte, privacidade, conteúdo e contato
+            comercial.
+          </p>
+          <a class="button" href="mailto:mel.app.contact@gmail.com">mel.app.contact@gmail.com</a>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img src="assets/mel-play-icon-128.png" width="36" height="36" alt="" />
+          <strong>MEL</strong>
+        </a>
+        <p>My Eclectic Library · Aplicativo Android em preparação para lançamento.</p>
+      </div>
+      <nav aria-label="Links legais">
+        <a href="privacy.html">Privacidade</a>
+        <a href="account-deletion.html">Exclusão de conta e suporte</a>
+        <a href="partners.html">Lojas parceiras</a>
+      </nav>
+      <p class="site-footer__date">Atualizado em 4 de agosto de 2026.</p>
+    </footer>
   </body>
 </html>
