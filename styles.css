@@ -30,6 +30,8 @@
 }
 
 html {
+  overflow-x: clip;
+  background: var(--ink);
   scroll-behavior: smooth;
 }
 
