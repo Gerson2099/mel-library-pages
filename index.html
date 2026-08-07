@@ -24,7 +24,7 @@
       content="https://gerson2099.github.io/mel-library-pages/assets/mel-feature-graphic-1024x500-wide.png"
     />
     <link rel="icon" href="assets/mel-play-icon-128.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260807-2" />
   </head>
   <body>
     <!--
@@ -189,21 +189,46 @@
 
       <section class="themes" aria-labelledby="temas-titulo">
         <div class="themes__visual">
-          <img
-            src="assets/mel-themes-pt-br.png"
-            width="720"
-            height="1600"
-            loading="lazy"
-            alt="Tela do MEL com opções de cores sólidas e temas em degradê"
-          />
+          <div
+            class="palette-device"
+            role="img"
+            aria-label="Prévia das cores incluídas no MEL: vermelho, verde, lima, azul, âmbar, azul-petróleo, índigo, sépia e grafite. Temas especiais Premium aparecem separados e bloqueados."
+          >
+            <div class="palette-device__bar" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+              <strong>Cores incluídas</strong>
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" />
+                <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.86 2.86-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21H9.6v-.1A1.7 1.7 0 0 0 8.5 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.86-2.86.06-.06A1.7 1.7 0 0 0 4.1 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H2.3V9.6h.1A1.7 1.7 0 0 0 4.1 8.5a1.7 1.7 0 0 0-.34-1.88l-.06-.06L6.56 3.7l.06.06A1.7 1.7 0 0 0 8.5 4.1a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1v-.1h4v.1A1.7 1.7 0 0 0 15 4.1a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.86 2.86-.06.06A1.7 1.7 0 0 0 19.4 8.5c.14.4.36.75.66 1 .3.25.7.38 1.1.4h.1v4h-.1A1.7 1.7 0 0 0 19.4 15Z" />
+              </svg>
+            </div>
+            <div class="palette-device__body" aria-hidden="true">
+              <span class="theme-swatch theme-swatch--red">Vermelho</span>
+              <span class="theme-swatch theme-swatch--green">Verde</span>
+              <span class="theme-swatch theme-swatch--lime">Lima</span>
+              <span class="theme-swatch theme-swatch--blue">Azul</span>
+              <span class="theme-swatch theme-swatch--amber">Âmbar</span>
+              <span class="theme-swatch theme-swatch--petroleum">Azul-petróleo</span>
+              <span class="theme-swatch theme-swatch--indigo">Índigo</span>
+              <span class="theme-swatch theme-swatch--sepia">Sépia</span>
+              <span class="theme-swatch theme-swatch--graphite">Grafite</span>
+              <span class="premium-lock">
+                <strong>Temas especiais</strong>
+                <small>Premium em preparação</small>
+              </span>
+            </div>
+          </div>
         </div>
         <div class="themes__copy">
           <p class="section-kicker">Identidade visual que acompanha a coleção</p>
           <h2 id="temas-titulo">Não existe uma única cor para todo leitor.</h2>
           <p>
-            O MEL inclui personalização de cor e modos claro e escuro. Temas
-            especiais, degradês e a opção de fazer os botões seguirem o tema
-            fazem parte do planejamento do MEL Premium Visual.
+            As cores sólidas mostradas na prévia e os modos claro e escuro
+            fazem parte da personalização incluída. Temas especiais, degradês
+            e a opção de fazer os botões seguirem o tema fazem parte do
+            planejamento do MEL Premium Visual.
           </p>
           <div class="notice notice--planned">
             <strong>Recurso em preparação</strong>
