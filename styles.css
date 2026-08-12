@@ -1038,7 +1038,11 @@ h3 {
 }
 
 .legal-hero h1 {
+  max-width: 15ch;
   margin-bottom: 28px;
+  font-size: clamp(3rem, 6.5vw, 5rem);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
 }
 
 .legal-hero--partners {
@@ -1345,6 +1349,7 @@ h3 {
 
   .legal-hero h1 {
     font-size: clamp(2.45rem, 12vw, 3.25rem);
+    line-height: 1.04;
   }
 
   .button-row,
