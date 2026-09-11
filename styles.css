@@ -920,6 +920,11 @@ h3 {
   color: var(--text-muted);
 }
 
+.contact--support {
+  padding-top: 0;
+  border-top: 0;
+}
+
 .site-footer {
   display: grid;
   grid-template-columns: 1fr auto;
