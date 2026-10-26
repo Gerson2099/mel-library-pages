@@ -63,7 +63,7 @@
 
         <h3>Avaliações da comunidade e moderação</h3>
         <p>
-          Sua avaliação pessoal fica no aparelho até você escolher publicá-la.
+          Sua avaliação pessoal só é publicada na MEL Cloud quando você escolhe publicá-la.
           Ao publicar na MEL Cloud, a nota (de 1 a 5 estrelas), a opinião
           opcional, seu nome público e as datas da publicação e das alterações
           ficam disponíveis para outros usuários na ficha da edição. O MEL
@@ -116,8 +116,9 @@
         </p>
         <p>
           Você pode compartilhar textos, capas, listas, imagens e pacotes MEL
-          usando as opções do Android. O app só compartilha quando você inicia
-          essa ação.
+          usando as opções do Android. Essas opções dependem da sua ação.
+          Nas versões com backup agendado no Google Drive, os envios podem ocorrer
+          após sua ativação, conforme a seção de backups abaixo.
         </p>
 
         <h3>Backups</h3>
@@ -126,6 +127,43 @@
           da biblioteca e, se você escolher backup completo, cópias de arquivos
           PDF, CBR e CBZ salvos no app. Você escolhe onde salvar e guardar esses
           arquivos.
+        </p>
+
+        <h3>Backup opcional no Google Drive</h3>
+        <p>
+          Nas versões que oferecem backup no Google Drive, você pode ativar a
+          opção e autorizar sua própria conta Google, independentemente de ter
+          uma Conta MEL Cloud. O acesso usa apenas o escopo <code>drive.file</code>
+          para arquivos criados ou autorizados para o MEL. As cópias privadas
+          <code>.melbackup</code> ficam na pasta MEL Backups da sua conta Drive;
+          não são publicadas na MEL Cloud.
+        </p>
+        <p>
+          Para lembrar a conexão, o agendamento e suas escolhas, e mostrar o
+          estado do serviço, o MEL guarda localmente o e-mail ou identificação
+          da conta Google escolhida, opções e estado do backup. O MEL não recebe
+          sua senha Google. A identificação local é removida quando a desconexão
+          é concluída; se a revogação falhar, ela pode permanecer para uma nova
+          tentativa. Esses dados de conexão não são enviados à MEL Cloud nem
+          incluídos no arquivo <code>.melbackup</code>.
+        </p>
+        <p>
+          A cópia pode conter livros, resenhas e avaliações locais, organização
+          e progresso. Capas e arquivos PDF, CBR e CBZ são opcionais, conforme
+          suas escolhas. Você pode solicitar uma cópia ou ativar o agendamento
+          aproximado de 24 horas. O Android pode adiar a execução por condições
+          de rede, bateria ou armazenamento; não há garantia de horário exato.
+          Aplicam-se a quota da sua conta Drive, o espaço local e os limites do
+          formato. Credenciais, autorização Premium e preferências gerais do
+          app não fazem parte do arquivo.
+        </p>
+        <p>
+          Após uma nova cópia confirmada, a retenção busca manter três versões
+          confirmadas por instalação/origem, sem apagar versões de outros
+          aparelhos. Desativar o agendamento cancela o trabalho automático.
+          Desconectar solicita a revogação do acesso Google e mantém a biblioteca
+          e as cópias já enviadas; você pode excluí-las pelo Drive. Excluir a
+          Conta MEL Cloud não exclui as cópias na sua conta Google.
         </p>
 
         <h3>Exclusão de conta</h3>
@@ -139,8 +177,9 @@
         <h3>Retenção, segurança e direitos</h3>
         <p>
           A biblioteca local permanece no aparelho até você apagar itens, limpar
-          os dados do app ou desinstalá-lo. Backups permanecem onde você decidiu
-          salvá-los. A Conta MEL Cloud permanece até ser excluída. Após a
+          os dados do app ou desinstalá-lo. Backups manuais permanecem onde você
+          decidiu salvá-los; cópias opcionais no Drive seguem a retenção descrita
+          acima. A Conta MEL Cloud permanece até ser excluída. Após a
           exclusão, e-mail, login e perfil público são removidos; contribuições
           antigas podem ser mantidas sem nome público e sem vínculo com a conta,
           sem prazo fixo, quando necessárias para integridade do catálogo,
@@ -189,8 +228,8 @@
         </p>
         <h3>Community reviews and moderation</h3>
         <p>
-          A personal review remains on your device until you choose to publish
-          it. A public MEL Cloud review shows other users your 1–5 star rating,
+          A personal review is published to MEL Cloud only when you choose to
+          publish it. A public MEL Cloud review shows other users your 1–5 star rating,
           optional opinion, public display name, and publication/update dates
           on the edition page. MEL Cloud records the version of the Community
           Guidelines accepted by your account and when you accepted it.
@@ -224,8 +263,50 @@
           from qualifying purchases at no additional cost to you. Partner links
           may contain an attribution identifier and open a retailer with its own
           privacy, cookie, account, payment, delivery, return, and support practices.
-          MEL does not receive your retailer payment details. User sharing
-          happens only when you start it through Android sharing options.
+          MEL does not receive your retailer payment details. Android sharing
+          options require your action. In versions offering scheduled Google
+          Drive backup, uploads can run after you opt in, as described below.
+        </p>
+        <h3>Backups</h3>
+        <p>
+          MEL provides manual backup and restore. A full backup can include
+          copies of PDF, CBR and CBZ reading files you select. You choose where
+          to save those manual copies.
+        </p>
+        <h3>Optional Google Drive backup</h3>
+        <p>
+          In versions offering Google Drive backup, you can opt in and authorize
+          your own Google account independently of a MEL Cloud account. Access
+          uses only the <code>drive.file</code> scope for files created or
+          authorized for MEL. Private <code>.melbackup</code> copies stay in the
+          MEL Backups folder of your Drive account; they are not published to
+          MEL Cloud.
+        </p>
+        <p>
+          To remember the connection, scheduling and your choices, and display
+          the service status, MEL stores the selected Google account's e-mail
+          or identifier, backup options and backup status locally. MEL does not
+          receive your Google password. The local account identifier is removed
+          when disconnection completes; if revocation fails, it may remain for
+          another attempt. This connection data is not sent to MEL Cloud or
+          included in the <code>.melbackup</code> file.
+        </p>
+        <p>
+          A copy can contain books, personal reviews/ratings, organization and
+          progress. Cover images and PDF, CBR and CBZ files are optional according
+          to your choices. You can request a copy or enable approximate 24-hour
+          scheduling. Android can delay execution because of network, battery
+          or storage conditions; exact timing is not guaranteed. Your Drive
+          account quota, local storage and format limits apply. Credentials,
+          Premium authorization and general app preferences are not included.
+        </p>
+        <p>
+          After a new confirmed copy, retention aims to keep three confirmed
+          versions per installation/source, preserving other devices' versions.
+          Disabling scheduling cancels automatic work. Disconnecting requests
+          Google access revocation and preserves your library and uploaded
+          copies; you can delete them in Drive. Deleting a MEL Cloud account
+          does not delete copies in your Google account.
         </p>
         <p>
           You can delete your MEL Cloud account from inside the app. Your local
@@ -234,7 +315,8 @@
         <h3>Retention, security, and your choices</h3>
         <p>
           Local library data remains on the device until you remove items, clear
-          app data, or uninstall the app. Backups remain where you save them. A
+          app data, or uninstall the app. Manual backups remain where you save
+          them; optional Drive copies follow the retention described above. A
           MEL Cloud account remains until deletion. After deletion, the e-mail,
           login, and public profile are removed. Older contributions may remain
           without a public name or account link, with no fixed retention period,
@@ -286,7 +368,7 @@
         </p>
         <h3>Reseñas comunitarias y moderación</h3>
         <p>
-          Tu reseña personal permanece en el dispositivo hasta que decidas
+          Tu reseña personal se publica en MEL Cloud solo cuando decides
           publicarla. Una reseña pública en MEL Cloud muestra a otros usuarios
           tu nota de 1 a 5 estrellas, opinión opcional, nombre público y fechas
           de publicación y cambios en la ficha de la edición. MEL Cloud registra
@@ -325,7 +407,51 @@
           identificador de atribución y abrir una tienda con
           sus propias prácticas de privacidad, cookies, cuenta, pago, entrega,
           cambios y soporte. MEL no recibe tus datos de pago de la tienda. El
-          uso compartido ocurre solo cuando tú lo inicias desde Android.
+          uso compartido de Android requiere tu acción. En versiones con copia
+          programada en Google Drive, las subidas pueden ocurrir después de que
+          la actives, como se explica a continuación.
+        </p>
+        <h3>Copias de seguridad</h3>
+        <p>
+          MEL ofrece copia y restauración manuales. Una copia completa puede
+          incluir los PDF, CBR y CBZ que elijas. Tú eliges dónde guardar esas
+          copias manuales.
+        </p>
+        <h3>Copia opcional en Google Drive</h3>
+        <p>
+          En las versiones que ofrecen copia en Google Drive, puedes activarla
+          y autorizar tu propia cuenta Google, independientemente de una Cuenta
+          MEL Cloud. Usa solo el permiso <code>drive.file</code> para archivos
+          creados o autorizados para MEL. Las copias privadas
+          <code>.melbackup</code> quedan en la carpeta MEL Backups de tu Drive;
+          no se publican en MEL Cloud.
+        </p>
+        <p>
+          Para recordar la conexión, la programación y tus opciones, y mostrar
+          el estado del servicio, MEL guarda localmente el e-mail o identificador
+          de la cuenta Google elegida, las opciones y el estado de la copia. MEL
+          no recibe tu contraseña de Google. El identificador local se elimina
+          cuando se completa la desconexión; si falla la revocación, puede
+          conservarse para otro intento. Estos datos de conexión no se envían a
+          MEL Cloud ni se incluyen en el archivo <code>.melbackup</code>.
+        </p>
+        <p>
+          La copia puede contener libros, reseñas y valoraciones personales,
+          organización y progreso. Las portadas y los PDF, CBR y CBZ son
+          opcionales, según tus elecciones. Puedes solicitar una copia o activar
+          una programación aproximada de 24 horas. Android puede retrasarla por
+          condiciones de red, batería o almacenamiento; no hay horario exacto
+          garantizado. Se aplican la cuota de tu Drive, el espacio local y los
+          límites del formato. No incluye credenciales, autorización Premium ni
+          preferencias generales de la app.
+        </p>
+        <p>
+          Después de una copia nueva confirmada, la retención busca mantener
+          tres versiones confirmadas por instalación/origen, conservando las de
+          otros dispositivos. Desactivar la programación cancela el trabajo
+          automático. Desconectar solicita revocar el acceso Google y conserva
+          la biblioteca y las copias subidas; puedes borrarlas en Drive.
+          Eliminar la Cuenta MEL Cloud no borra copias de tu cuenta Google.
         </p>
         <p>
           Puedes eliminar tu cuenta MEL Cloud desde la app. Tu biblioteca local
@@ -334,8 +460,9 @@
         <h3>Conservación, seguridad y tus opciones</h3>
         <p>
           La biblioteca local permanece en el dispositivo hasta que elimines
-          elementos, borres los datos de la app o la desinstales. Las copias de
-          seguridad permanecen donde las guardes. La cuenta MEL Cloud permanece
+          elementos, borres los datos de la app o la desinstales. Las copias
+          manuales permanecen donde las guardes; las opcionales de Drive siguen
+          la retención descrita arriba. La cuenta MEL Cloud permanece
           hasta su eliminación. Después, se eliminan el e-mail, el acceso y el
           perfil público. Las contribuciones antiguas pueden conservarse sin
           nombre público ni vínculo con la cuenta, sin plazo fijo, cuando sean
@@ -358,7 +485,7 @@
         </p>
         <p><a href="partners.html">Lojas parceiras e transparência comercial</a></p>
         <p><a href="index.html">Voltar ao início</a></p>
-        <p>Última atualização: 15 de setembro de 2026.</p>
+        <p>Última atualização: 26 de outubro de 2026.</p>
       </footer>
     </main>
   </body>
